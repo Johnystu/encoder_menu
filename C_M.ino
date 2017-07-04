@@ -1,7 +1,7 @@
 void CM(byte n)  {
 
   //if ((!r[n].CS.MODE && r[n].CS.CONTROL && !r[n].CS.INTERLOCK && !r[n].STS.isRun )){
-    if (r[n].STS.isRun = 1 ){
+    if (r[n].STS.isRun == 1 ){
      
     startTime = millis();
     stopTime  = startTime + (EEPROM.read(r[n].PAR.V) / EEPROM.read(r[n].PAR.K) * 1000);
